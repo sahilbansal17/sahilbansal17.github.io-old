@@ -1,0 +1,14 @@
+p{
+	color: red;
+}
+div{
+	background-color: azure;
+	border: 1px solid aquamarine;
+	padding: 10px;
+}
+img.middle{
+	vertical-align: middle;
+	float: right;
+	height: 230px;
+	width: 220px;
+}
