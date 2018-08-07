@@ -1,0 +1,18 @@
+title: Sahil Bansal
+title_separator: '-'
+name: &name "Sahil"
+description: &description "personal description"
+baseurl: ""
+url: https://sahilbansal17.github.io/
+read_more: "disabled"
+
+author:
+  name: "Sahil Bansal"
+  avatar: "profile.png"
+  bio: Student at IIT Jammu
+  location: Jammu
+  github: "sahilbansal17"
+  linkedin: "sahilbansal17"
+  twitter: "sahilbansal11"
+  
+
