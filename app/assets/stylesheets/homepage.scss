@@ -1,3 +1,21 @@
 // Place all the styles related to the homepage controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main {
+  font-size: 40px
+}
+
+#my_name {
+  text-align: center;
+  color: blue;
+  font-size: 80px
+}
+
+#homepage {
+  background-color: lightyellow
+}
+
+footer {
+  text-align: center
+}
