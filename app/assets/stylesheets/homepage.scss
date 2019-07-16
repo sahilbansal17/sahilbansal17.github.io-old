@@ -2,20 +2,99 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.main {
-  font-size: 40px
+.full-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#my_name {
+.spinner {
+  margin: 100px auto;
+  width: 150px;
+  height: 40px;
   text-align: center;
-  color: blue;
-  font-size: 80px
+  font-size: 15px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 200;
 }
 
-#homepage {
-  background-color: lightyellow
+.spinner > div {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
 }
 
-footer {
-  text-align: center
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+// navigation bar styling
+
+.navbar {
+  background-color:rgba(0, 0, 0, 1.0);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 1000;
+  font-family: 'Fira Sans', sans-serif;
+  padding-top: 13px;
+  img {
+    height: 22px;
+  }
+  .text {
+    margin-top: 13px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+    &:hover {
+      border-bottom: 1px solid #3FAEFD;
+    }
+  }
+}
+
+.nav-bg {
+  background-color:rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+  height: 1px;
 }
